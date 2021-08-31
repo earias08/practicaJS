@@ -12,10 +12,23 @@ function saludar(nombre, apellido){
 }
 
 //funciones que retornan un valor
-function convertirDolaresPesos(dolares){
+// function convertirDolaresPesos(dolares){
+//     let pesos = dolares * 190;
+//     console.log(pesos)
+//     // siempre el return es la ultima linea de codigo
+//     return pesos;
+// }
+
+// arrow functions o funciones en forma de flecha
+/*
+    let nombreFuncion = (parametro1,parametro2) =>{
+        aqui va el codigo de la funcion
+    }
+*/ 
+
+let convertirDolaresPesos = (dolares) =>{
     let pesos = dolares * 190;
-    console.log(pesos)
-    // siempre el return es la ultima linea de codigo
+    console.log(pesos);
     return pesos;
 }
 
@@ -35,3 +48,5 @@ let precioIphone = convertirDolaresPesos(599)
 
 document.write('<br>Iphone SE $'+precioIphone);
 document.write('<br>Jordan $'+convertirDolaresPesos(200));
+
+
